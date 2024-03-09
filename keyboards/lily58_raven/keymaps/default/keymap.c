@@ -95,24 +95,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
     [_FUNC] = LAYOUT(
           KC_TRNS,    KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,                        KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_F11,
-          KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_TRNS,    KC_INS,     KC_TRNS,    KC_PRINT_SCREEN,    KC_F12,
+          KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    DF(_NMPAD), DF(_MOUSE),                      KC_TRNS,    KC_TRNS,    KC_INS,     KC_TRNS,    KC_PRINT_SCREEN,    KC_F12,
           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,    KC_RIGHT,    KC_TRNS,
           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_HOME,    KC_PGDN,    KC_PGUP,    KC_HOME,    KC_TRNS,    KC_CAPS,
-                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,             KC_APP,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
+                            KC_TRNS,    KC_TRNS,    KC_TRNS,    DF(_BASE),    DF(_FUNC),             KC_APP,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
         ),
     [_MOUSE] = LAYOUT(
           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
-          KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
-          KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
-                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
+          KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_MS_L,    KC_MS_D,    KC_MS_U,    KC_MS_R,    KC_TRNS,    KC_TRNS,
+          KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_WH_L,    KC_WH_D,    KC_WH_U,    KC_WH_R,    KC_TRNS,    KC_TRNS,
+                            KC_TRNS,    KC_TRNS,    KC_TRNS,    DF(_BASE),    KC_TRNS,             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
         ),
     [_NMPAD] = LAYOUT(
           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_NUM_LOCK,    KC_KP_SLASH,    KC_KP_ASTERISK,    KC_MINS,    KC_TRNS,
           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_KP_7,    KC_KP_8,    KC_KP_9,    KC_KP_PLUS,    KC_TRNS,
           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_KP_4,    KC_KP_5,    KC_KP_6,   KC_KP_EQUAL, KC_TRNS,
           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                      KC_TRNS,    KC_KP_1,    KC_KP_2,    KC_KP_3, KC_TRNS,    KC_TRNS,
-                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,             KC_TRNS,    KC_KP_0,    KC_DOT,    KC_ENTER,    KC_TRNS
+                            KC_TRNS,    KC_TRNS,    KC_TRNS,    DF(_BASE),   KC_TRNS,             KC_TRNS,    KC_KP_0,    KC_DOT,    KC_ENTER,    KC_TRNS
         ),
     /* clang-format on */
 };
